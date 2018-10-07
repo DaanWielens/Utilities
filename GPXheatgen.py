@@ -55,7 +55,7 @@ ax.spines['right'].set_visible(False)
 ax.spines['bottom'].set_visible(False)
 ax.spines['left'].set_visible(False)
 
-#%% Plot data - normal plot (black on white), alpha < 1
+#%% Plot data - normal plot (white on black), alpha < 1
 nData = len(x_all)
 fig, ax = plt.subplots(figsize=(10, 10))
 fig.patch.set_facecolor('black')
