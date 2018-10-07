@@ -1,5 +1,8 @@
 # Utilities
-This folder contains utilities in several scripting languages. Most of the utilities are templates.
+This folder contains several (unrelated) utilities.
+
+**[Python] GPXheatmap**
+This *tool* can be used to create heat maps from GPX data: Garmin Activity Data. Simply export the activity data from the Garmin app, store all GPX files in the same folder, and run this file from within that same folder. The script will create simple heat maps.
 
 **[Python] batch-recur**
 
