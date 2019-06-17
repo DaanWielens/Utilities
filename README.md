@@ -10,3 +10,5 @@ This *template* is for batch conversion/analysis of files. If a certain (command
 
 ** [Python] WAgroup**
 This *tool* can be used to create a bar plot of number of messages per person in a WhatsApp group. In WhatsApp, export the chat. Place the .txt file in the same folder as the script, edit the filename in the script (i.e. `file = 'yourgroupchathere.txt'`) and run the script. The script will save the graph in the same folder.
+
+Credits for WAgroup partially go to https://github.com/BASTAHT for the initial idea, on which this version is based (completely rewritten).
