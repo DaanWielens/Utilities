@@ -22,7 +22,7 @@ def parseGPX(filename):
                 y = np.append(y, float(line[1]))
 
     return x, y
-                
+
 # Plot GPX data
 def plotGPX(x,y):
     plt.plot(x,y)
@@ -30,6 +30,12 @@ def plotGPX(x,y):
 #------------------------------------------------------------------------------
 # MAIN CODE
 #------------------------------------------------------------------------------
+
+#%% Move old plots to _prev files (for comparison)
+if os.path.isfile('Heatmap_bow.png'):
+    os.rename('Heatmap_bow.png', 'Heatmap_bow_prev.png')
+if os.path.isfile('Heatmap_wob.png'):
+    os.rename('Heatmap_wob.png', 'Heatmap_wob_prev.png')
 
 #%% Get all GPX data
 x_all = []
@@ -54,6 +60,7 @@ ax.spines['top'].set_visible(False)
 ax.spines['right'].set_visible(False)
 ax.spines['bottom'].set_visible(False)
 ax.spines['left'].set_visible(False)
+plt.savefig('Heatmap_bow.png')
 
 #%% Plot data - normal plot (white on black), alpha < 1
 nData = len(x_all)
@@ -70,3 +77,4 @@ ax.spines['top'].set_visible(False)
 ax.spines['right'].set_visible(False)
 ax.spines['bottom'].set_visible(False)
 ax.spines['left'].set_visible(False)
+plt.savefig('Heatmap_wob.png', facecolor='black')
